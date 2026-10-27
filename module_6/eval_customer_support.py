@@ -15,8 +15,8 @@ api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise SystemExit("Set GEMINI_API_KEY to your Google AI Studio key, then rerun.")
 
-# Traces Gemini calls into the Customer Support Chatbot project.
-setup_genai(project_name="Customer Support Chatbot")
+# Traces Gemini calls into the SDK Customer Support bot project.
+setup_genai(project_name="SDK Customer Support bot")
 client = genai.Client(api_key=api_key)
 
 # --- Dataset ---
@@ -127,7 +127,7 @@ def concise_task(input):
 
 # --- Run experiments ---
 Eval(
-    "Customer Support Chatbot",
+    "SDK Customer Support bot",
     data=lambda: dataset,
     task=polite_task,
     scores=[brand_alignment_scorer],
@@ -137,7 +137,7 @@ Eval(
 )
 
 Eval(
-    "Customer Support Chatbot",
+    "SDK Customer Support bot",
     data=lambda: dataset,
     task=concise_task,
     scores=[brand_alignment_scorer],
