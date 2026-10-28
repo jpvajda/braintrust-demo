@@ -27,6 +27,6 @@ export GEMINI_API_KEY="your-gemini-api-key"
 uv run python eval_customer_support.py
 ```
 
-This will run two experiments ("Polite Personality" and "Concise Personality") and upload the results to the "Customer Support Chatbot" project in Braintrust. You can then compare them in the Braintrust UI.
+This will run two experiments ("Polite Personality" and "Concise Personality") and upload the results to the "SDK Customer Support bot" project in Braintrust. You can then compare them in the Braintrust UI.
 
 Google does not publish this model's free-tier request cap. The script sends one call every 5 seconds, so the full 16-row run takes about 8 minutes. This model's quota is separate from `gemini-3-flash`.
