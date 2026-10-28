@@ -25,7 +25,7 @@ The lesson says to save a trace-level scorer and moves on. Create it in the **SD
 3. Type: **LLM judge**.
 4. Preprocessor: **Project default (Thread)**. That builds the conversation text.
 5. Model: a Gemini model already configured on the project. **Gemini 3.1 Flash-Lite** is a fine choice here.
-6. One system message, template syntax **Mustache**. Use `{{thread}}`, not `{{input}}`. `{{input}}` is only the root span's raw input. `{{thread}}` is the full conversation as readable text, without the system prompt. The Thread preprocessor runs because the prompt uses `{{thread}}`. See [LLM-as-a-judge evaluators](https://www.braintrust.dev/docs/evaluate/llm-as-a-judge).
+6. One **User** message, template syntax **Mustache**. Leave the role on User. Google stores a System message in `systemInstruction` and rejects the request when that is the only message. Use `{{thread}}`, not `{{input}}`. `{{input}}` is only the root span's raw input. `{{thread}}` is the full conversation as readable text, without the system prompt. The Thread preprocessor runs because the prompt uses `{{thread}}`. See [LLM-as-a-judge evaluators](https://www.braintrust.dev/docs/evaluate/llm-as-a-judge).
 
 ```
 Did this customer support conversation successfully resolve the customer's issue?
