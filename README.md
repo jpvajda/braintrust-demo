@@ -81,3 +81,8 @@ The top of that script lists the columns and how to map them on upload.
 - [AI Evals: Getting started with Evals](https://medium.com/@STB_90/getting-started-with-evals-a-step-by-step-guide-leveraging-bottom-up-error-analysis-and-llm-judge-3d9b755824a7) — bottom-up error analysis and LLM judges
 - [Hamel Husain](https://hamel.dev) — deeper eval practice and tooling guidance
 - [Braintrust docs](https://www.braintrust.dev/docs) — platform reference for datasets, experiments, online scoring, and Topics
+- [Develop tests — Claude Docs](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests) — Anthropic guidance on designing evals and test suites
+- [Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/) — Hamel Husain on why evals are the foundation of AI product work
+- [An LLM-as-Judge Won't Save Your Product](https://eugeneyan.kit.com/posts/an-llm-as-judge-won-t-save-your-product-fixing-your-process-will) — Eugene Yan on fixing process over chasing judges
+- [In Defense of AI Evals](https://www.sh-reya.com/blog/in-defense-ai-evals) — Shreya Shankar on why evals still matter
+- [LLM Evaluation: A Complete Introduction](https://www.evidentlyai.com/llm-guide/llm-evaluation) — Evidently AI overview of LLM evaluation methods
